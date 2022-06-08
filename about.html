@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trường Đại Học</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans:wght@300&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,600;8..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="home.html"><img src="img/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="home.html">Trang chủ</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="khóahọc.html">Khóa học</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Ngôi Trường Đại Học Quốc Tế</h1>
+          <p>
+            Trường Đại Học Quốc Tế tổ chức bảo vệ luận án tiến sĩ cấp Cơ sở đào
+            tạo cho Nghiên cứu sinh Nguyễn Toàn Văn, ngành Quản lý giáo
+            dục.Trường Đại Học Quốc Tế là một tổ chức giáo dục cung cấp các
+            chương trình đại học, sau đại học và các chương trình đặc biệt. Nó
+            cung cấp các khóa học về kỹ thuật hàng không vũ trụ, kiến ​​trúc,
+            sinh học, hóa học, nghiên cứu truyền thông, kỹ thuật dân dụng và môi
+            trường, khiêu vũ, môi trường, âm nhạc, luật, tâm lý học, y tế và
+            dược phẩm. Trường Đại Học Quốc Tế được thành lập năm 1817 và có trụ
+            sở tại Ann Arbor, Michigan.
+          </p>
+          <a href="" class="hero-bnt red-bnt">KHÁM PHÁ NGAY</a>
+        </div>
+        <div class="about-col"><img src="img/about.jpg" /></div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>Liên hệ chúng tôi</h4>
+      <p>0661-033-100</p>
+      <p>Hãy đến với chúng tôi vì một môi trường ổn định và bổ ích</p>
+
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Được tạo bởi <i class="fa fa-heart-o"></i> Nguyễn Lưu Gia An</p>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

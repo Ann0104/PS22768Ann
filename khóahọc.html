@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trường Đại Học</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans:wght@300&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,600;8..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="home.html"><img src="img/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="home.html">Trang chủ</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="khóahọc.html">Khóa học</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Khóa Học Của Chúng Tôi</h1>
+    </section>
+
+    <section class="course">
+      <h1>Các Khóa Học</h1>
+      <p>
+        Các Khóa Học dạy những thứ bổ ích không thừa thiếu hay thiếu kiến thức.
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Digital Marketing</h3>
+          <p>
+            Giúp học viên từng bước thực hiện việc quảng bá, sản phẩm, dịch vụ
+            của mình trên internet, cũng như giúp học viên đo lường đánh giá
+            hiệu quả của từng kênh để điều chỉnh toàn chiến dịch đạt hiệu quả.
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Giám Đốc Tài Chính</h3>
+          <p>
+            Trang bị cho học viên những kiến thức và kỹ năng chuyên sâu về phân
+            tích tài chính, dự đoán, đánh giá tác động bên trong và bên ngoài
+            lên tình hình tài chính của doanh nghiệp.
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Kế Toán Trưởng</h3>
+          <p>
+            Giúp học viên hiểu và vận dụng tốt những kiến thức, kỹ năng, công cụ
+            và kinh nghiệm cần phải có của một người làm Kế toán trưởng.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="facilities">
+      <h1>Cơ sở vật chất của trường</h1>
+      <p>Vật liệu chuẩn tốt, nơi học và vui chơi rộng rãi</p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="img/library.png" />
+          <h3>Thư Viện</h3>
+          <p>Nơi mang đến nhiều kiến thức và thông tin bổ ích.</p>
+        </div>
+
+        <div class="facilities-col">
+          <img src="img/basketball.png" />
+          <h3>Sân Bóng Rổ</h3>
+          <p>Nơi rèn luyện sức khỏe và hoạt động ngoài giờ học.</p>
+        </div>
+
+        <div class="facilities-col">
+          <img src="img/cafeteria.png" />
+          <h3>Cafeteria</h3>
+          <p>Nơi thư giản, uống cafe hay có thể làm việc tại đây.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>Liên hệ chúng tôi</h4>
+      <p>0661-033-100</p>
+      <p>Hãy đến với chúng tôi vì một môi trường ổn định và bổ ích</p>
+
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Được tạo bởi <i class="fa fa-heart-o"></i> Nguyễn Lưu Gia An</p>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
